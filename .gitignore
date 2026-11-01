@@ -1,0 +1,21 @@
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+
+# Python cache & temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary screenshot
+image.png
+
+# Local backups (if any recreated)
+backup_*
