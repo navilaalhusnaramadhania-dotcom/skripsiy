@@ -1,0 +1,22 @@
+# Security & CORS for all routes
+/*
+  Access-Control-Allow-Origin: *
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# HTML pages - revalidate to get latest updates
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Heavy static media assets - aggressive CDN edge caching for superfast loading
+/mobile/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/story_content/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/html5/*
+  Cache-Control: public, max-age=31536000, immutable
